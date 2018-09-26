@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.classic.common.MultipleStatusView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:id="@+id/multiple_status_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:emptyView="@layout/custom_empty_view"
+       app:errorView="@layout/custom_error_view"
+       app:loadingView="@layout/custom_loading_view"
+       app:noNetworkView="@layout/custom_no_network_view">
+
+   <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.funny.wanandroidclient.widget.CustomScrollView
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                       <!-- <com.tanwan.gamebox.widget.CustomBanner
+                            android:layout_gravity="center"
+                            android:id="@+id/banner"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            app:open_mz_mode="false"
+                            app:middle_page_cover="false"
+                            app:canLoop="true"
+                            app:indicatorAlign="center"
+                            app:indicatorPaddingLeft="0dp"
+                            android:layout_marginTop="14dp"
+                            />-->
+
+                        <com.youth.banner.Banner
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:title_textsize="14sp"
+                            app:title_height="48dp"
+                            app:indicator_drawable_selected="@mipmap/ic_banner_selected"
+                            app:indicator_drawable_unselected="@mipmap/ic_banner_unselected"
+                            app:indicator_margin="4dp"
+                            app:indicator_width="6dp"
+                            app:indicator_height="6dp"
+                            />
+
+                        <View android:id="@+id/head_split_view"
+                              android:layout_width="match_parent"
+                              android:layout_height="8dp"
+                              android:background="#f7f8f9"
+                            />
+
+
+
+                        <RelativeLayout
+                            android:id="@+id/ll_sort_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:elevation="0dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/home_padding"
+                            android:paddingRight="14dp"
+                           >
+
+                            <TextView
+                                android:id="@+id/tvTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="最新博文"
+                                android:textStyle="bold"
+                                android:textColor="#1a1a1a"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/tvSort"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:drawableRight="@mipmap/ic_triangle_down"
+                                android:drawablePadding="1dp"
+                                android:text="综合排序"
+                                android:gravity="center_vertical"
+                                android:textColor="#999"
+                                android:textSize="13sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="#F2F2F2"
+                            />
+
+
+                        <!--<android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:overScrollMode="never"
+                             />-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:descendantFocusability="blocksDescendants">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:clipToPadding="false"
+                                android:id="@+id/recyclerView"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+    </com.funny.wanandroidclient.widget.CustomScrollView>
+
+   </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</com.classic.common.MultipleStatusView>

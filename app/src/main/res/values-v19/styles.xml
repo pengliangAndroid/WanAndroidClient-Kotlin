@@ -1,0 +1,13 @@
+<resources>
+
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+    <style name="Theme.Swipe.Back.NoActionBar" parent="BaseAppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

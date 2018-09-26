@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3497DA</color>
+    <color name="colorPrimaryDark">#3497DA</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorCE">#cecece</color>
+    <color name="color44">#444444</color>
+    <color name="color2b">#2b2b2b</color>
+
+    <color name="gray_text">#999999</color>
+    <color name="text_color">#CC0000</color>
+
+    <!-- item -->
+    <color name="item_date">#ffA8A8A8</color>
+    <color name="item_title_tv">#ff000000</color>
+    <color name="item_tag_tv">#ffFFFFFF</color>
+
+    <color name="common_quality_tag_bg">#ff0377BC</color>
+    <color name="common_subtitle_tag_bg">#ffEF6C02</color>
+
+
+    <color name="common_android_tag_bg">#ff388E3C</color>
+    <color name="common_ios_tag_bg">#ff0377BC</color>
+    <color name="common_js_tag_bg">#ffEF6C02</color>
+    <color name="common_github_tag_bg">#ff000000</color>
+    <color name="common_title_tv">#ff000000</color>
+    <color name="common_item_via">#ffA8A8A8</color>
+
+    <color name="text_color_light">#ff333333</color>
+    <color name="text_color_night">#ffc2c2c2</color>
+
+    <color name="list_background">#fff5f5f5</color>
+    <color name="list_background_night">#ff303030</color>
+
+    <color name="black_bar">#FF232426</color>
+</resources>
